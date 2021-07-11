@@ -1,4 +1,3 @@
-import SidebarContext from "./context/Sidebar/SidebarContext";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SidebarState from "./context/Sidebar/SidebarState";
