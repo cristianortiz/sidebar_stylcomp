@@ -11,10 +11,8 @@ import {
 import MenuItem from "./MenuItem";
 
 const Sidebar = () => {
-  //sidebar context to access ther global props
-  const sidebar_context = useContext(SidebarContext);
-  //destructurin props from sidebar context
-  const { is_open, open_width, close_width } = sidebar_context;
+  //destructuring props from sidebar context
+  const { is_open, open_width, close_width } = useContext(SidebarContext);
 
   return (
     <>

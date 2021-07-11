@@ -7,8 +7,8 @@ import Sidebar from "../Sidebar/Sidebar";
 import { Container, MainContent } from "./Layout.styles";
 
 const Layout = () => {
-  const sidebar_context = useContext(SidebarContext);
-  const { is_open, open_width, close_width } = sidebar_context;
+  //destructuring props from sidebar state
+  const { is_open, open_width, close_width } = useContext(SidebarContext);
 
   return (
     <Router>
@@ -21,7 +21,7 @@ const Layout = () => {
         >
           <NavBar />
           <Switch>
-            <Route exact path="/Dashboard" component={Dashboard} />
+            <Route exact path="/dashboard" component={Dashboard} />
           </Switch>
         </MainContent>
       </Container>
