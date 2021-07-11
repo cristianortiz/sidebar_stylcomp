@@ -6,6 +6,8 @@ import SidebarReducer from "./SidebarReducer";
 const SidebarState = (props) => {
   const initialState = {
     is_open: true,
+    open_width: "250px",
+    close_width: "60px",
     item_selected: false,
   };
   //dispatch to execute actions with useReducer hook relatives to sidebar
@@ -22,6 +24,8 @@ const SidebarState = (props) => {
     <SidebarContext.Provider
       value={{
         is_open: state.is_open,
+        open_width: state.open_width,
+        close_width: state.close_width,
         item_selected: state.item_selected,
         setOpen,
       }}

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const SidebarContainer = styled.div`
   //width: var(--sidebar-width);
-  width: ${(props) => (props.is_open ? "250px" : "60px")};
+  width: ${(props) => (props.is_open ? props.open_width : props.close_width)};
   position: fixed;
   background: #003147;
   color: #fff;

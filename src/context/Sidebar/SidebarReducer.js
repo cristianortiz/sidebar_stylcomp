@@ -5,6 +5,7 @@ export default (state, action) => {
     case OPEN_SIDEBAR:
       return {
         ...state,
+        //sidebar_width: action.payload,
         is_open: action.payload,
       };
     case CLOSE_SIDEBAR:

@@ -14,11 +14,15 @@ const Sidebar = () => {
   //sidebar context to access ther global props
   const sidebar_context = useContext(SidebarContext);
   //destructurin props from sidebar context
-  const { is_open } = sidebar_context;
+  const { is_open, open_width, close_width } = sidebar_context;
 
   return (
     <>
-      <SidebarContainer is_open={is_open}>
+      <SidebarContainer
+        is_open={is_open}
+        open_width={open_width}
+        close_width={close_width}
+      >
         <SidebarHeader>
           <SidebarIcon>{header.icon}</SidebarIcon>
           <h3>
