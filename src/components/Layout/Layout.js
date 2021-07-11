@@ -1,7 +1,12 @@
 import { useContext } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SidebarContext from "../../context/Sidebar/SidebarContext";
-import Dashboard from "../Dashboard/Dashboard";
+import Academicos from "../../pages/Academicos/Academicos";
+import Alumnos from "../../pages/Alumnos/Alumnos";
+import Becas from "../../pages/Becas/Becas";
+import Configuracion from "../../pages/Configuracion/Configuracion";
+import Dashboard from "../../pages/Dashboard/Dashboard";
+import Programas from "../../pages/Programas/Programas";
 import NavBar from "../NavBar/NavBar";
 import Sidebar from "../Sidebar/Sidebar";
 import { Container, MainContent } from "./Layout.styles";
@@ -21,7 +26,12 @@ const Layout = () => {
         >
           <NavBar />
           <Switch>
-            <Route exact path="/dashboard" component={Dashboard} />
+            <Route path="/dashboard" component={Dashboard} />
+            <Route path="/programas" component={Programas} />
+            <Route path="/alumnos" component={Alumnos} />
+            <Route path="/becas" component={Becas} />
+            <Route path="/academicos" component={Academicos} />
+            <Route path="/configuracion" component={Configuracion} />
           </Switch>
         </MainContent>
       </Container>

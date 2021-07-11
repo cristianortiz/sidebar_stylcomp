@@ -9,7 +9,7 @@ export const header = {
 export const sidebarData = [
   {
     title: "Dashboard",
-    to: "/dashboard",
+    to: "/home/dashboard",
     icon: <RiIcons.RiDashboardFill />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -18,7 +18,7 @@ export const sidebarData = [
 
   {
     title: "Programas",
-    to: "/Programas",
+    to: "/home/programas",
     icon: <FaIcons.FaClipboardList />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -36,7 +36,7 @@ export const sidebarData = [
 
   {
     title: "Alumnos",
-    to: "/alumnos",
+    to: "/home/alumnos",
     icon: <FaIcons.FaUserGraduate />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -44,7 +44,7 @@ export const sidebarData = [
   },
   {
     title: "Becas",
-    to: "/becas",
+    to: "/home/becas",
     icon: <FaIcons.FaMoneyCheckAlt />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -62,18 +62,27 @@ export const sidebarData = [
 
   {
     title: "Académicos",
-    to: "/academicos",
+    to: "/home/academicos",
     icon: <FaIcons.FaChalkboardTeacher />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
     subNav: [],
   },
   {
-    title: "Usuarios",
-    to: "/usuarios",
-    icon: <FaIcons.FaUsersCog />,
+    title: "Configuracion",
+    to: "/home/configuracion",
+    icon: <RiIcons.RiSettings4Fill />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
-    subNav: [],
+    subNav: [
+      {
+        title: "Matricula",
+        to: "/configuracion/matricula",
+      },
+      {
+        title: "Usuarios",
+        to: "/configuracion/usuarios",
+      },
+    ],
   },
 ];
