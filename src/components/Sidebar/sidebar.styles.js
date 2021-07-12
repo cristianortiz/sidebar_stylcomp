@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export const SidebarContainer = styled.div`
   //width: var(--sidebar-width);
@@ -36,13 +36,17 @@ export const SidebarListItem = styled.li`
   }
 `;
 
-export const SidebarLink = styled(Link)`
+export const SidebarLink = styled(NavLink)`
   position: relative;
   //display: block;
   width: 100%;
   display: flex;
   text-decoration: none;
   color: #fff;
+  //set style for a selected menu item
+  &.${(props) => props.activeClassName} {
+    color: red;
+  }
 `;
 export const SidebarLabel = styled.span`
   position: relative;

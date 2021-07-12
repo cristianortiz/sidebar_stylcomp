@@ -12,7 +12,8 @@ import MenuItem from "./MenuItem";
 
 const Sidebar = () => {
   //destructuring props from sidebar context
-  const { is_open, open_width, close_width } = useContext(SidebarContext);
+  const { is_open, open_width, close_width, is_selected } =
+    useContext(SidebarContext);
 
   return (
     <>
@@ -20,6 +21,7 @@ const Sidebar = () => {
         is_open={is_open}
         open_width={open_width}
         close_width={close_width}
+        is_selected={is_selected}
       >
         <SidebarHeader>
           <SidebarIcon>{header.icon}</SidebarIcon>

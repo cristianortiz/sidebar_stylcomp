@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import SidebarContext from "../../context/Sidebar/SidebarContext";
 import {
   SidebarLink,
   SidebarLabel,
@@ -7,10 +8,11 @@ import {
 } from "./sidebar.styles";
 
 const MenuItem = ({ item }) => {
+  const { itemSelected } = useContext(SidebarContext);
   return (
     <>
       <SidebarListItem>
-        <SidebarLink to={item.to}>
+        <SidebarLink to={item.to} activeClassName="selected">
           <SidebarIcon> {item.icon}</SidebarIcon>
           <SidebarLabel>{item.title}</SidebarLabel>
         </SidebarLink>
