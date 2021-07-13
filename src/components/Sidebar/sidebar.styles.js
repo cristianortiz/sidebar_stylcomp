@@ -53,9 +53,7 @@ export const SidebarLink = styled(NavLink)`
     // background: rgba(132, 175, 245, 0.8);
     background: #42648d;
     color: #fff;
-    //border-radius: 25px;
-
-    //background-image: linear-gradient(315deg, #e4b5cb 0%, #722ae6 74%);
+    transition: 0.15s ease-in all;
   }
 `;
 export const SidebarLabel = styled.span`
