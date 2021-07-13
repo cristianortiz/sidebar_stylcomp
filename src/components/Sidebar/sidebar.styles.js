@@ -1,28 +1,21 @@
 import styled from "@emotion/styled";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const SidebarContainer = styled.div`
-  //width: var(--sidebar-width);
   width: ${(props) => (props.is_open ? props.open_width : props.close_width)};
   position: fixed;
-  /* background-color: #000000;
-  background-image: linear-gradient(200deg, #000000 0%, #04619f 74%); */
   color: #fff;
   height: 100%;
   background: #29405c;
-  //background: #2a3f54;
-  /* top: 0;
-  left: 0; */
   overflow: hidden;
   transition: 0.2s ease-in all;
 `;
 export const SidebarHeader = styled.div`
   position: relative;
-  height: 60px;
-  //border-bottom: 1px solid gold;
-  //margin-bottom: 10px;
+  //height: 80px;
   display: flex;
   background: #1d3146;
+  //padding-top: 8px;
 `;
 export const SidebarNav = styled.ul`
   width: 100%;
@@ -53,7 +46,8 @@ export const SidebarLink = styled(NavLink)`
     // background: rgba(132, 175, 245, 0.8);
     background: #42648d;
     color: #fff;
-    transition: 0.15s ease-in all;
+    transition: 0.1s ease-in all;
+    border-left: 4px solid coral;
   }
 `;
 export const SidebarLabel = styled.span`

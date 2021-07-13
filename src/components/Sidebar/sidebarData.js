@@ -69,7 +69,7 @@ export const sidebarData = [
     subNav: [],
   },
   {
-    title: "Configuracion",
+    title: "Configuración",
     to: "/home/configuracion",
     icon: <RiIcons.RiSettings4Fill />,
     iconClosed: <RiIcons.RiArrowDownSFill />,

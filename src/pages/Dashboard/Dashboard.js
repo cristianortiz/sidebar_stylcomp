@@ -1,7 +1,18 @@
 import React from "react";
+import Cards from "../../components/Cards/Cards";
+import { CardsBox } from "../../components/Cards/cards.styles";
+import { cardsData } from "../../components/Cards/cardsData";
 
 const Dashboard = () => {
-  return <h1>This is dashboard</h1>;
+  return (
+    <>
+      <CardsBox>
+        {cardsData.map((item, index) => {
+          return <Cards item={item} key={index} />;
+        })}
+      </CardsBox>
+    </>
+  );
 };
 
 export default Dashboard;

@@ -1,5 +1,5 @@
 import { useReducer } from "react";
-import { ITEM_SELECTED, OPEN_SIDEBAR } from "../../types";
+import { OPEN_SIDEBAR } from "../../types";
 import SidebarContext from "./SidebarContext";
 import SidebarReducer from "./SidebarReducer";
 
