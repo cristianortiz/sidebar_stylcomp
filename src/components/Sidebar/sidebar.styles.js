@@ -5,9 +5,12 @@ export const SidebarContainer = styled.div`
   //width: var(--sidebar-width);
   width: ${(props) => (props.is_open ? props.open_width : props.close_width)};
   position: fixed;
-  background: #003147;
+  /* background-color: #000000;
+  background-image: linear-gradient(200deg, #000000 0%, #04619f 74%); */
   color: #fff;
   height: 100%;
+  background: #29405c;
+  //background: #2a3f54;
   /* top: 0;
   left: 0; */
   overflow: hidden;
@@ -16,9 +19,10 @@ export const SidebarContainer = styled.div`
 export const SidebarHeader = styled.div`
   position: relative;
   height: 60px;
-  border-bottom: 1px solid lightblue;
-  margin-bottom: 10px;
+  //border-bottom: 1px solid gold;
+  //margin-bottom: 10px;
   display: flex;
+  background: #1d3146;
 `;
 export const SidebarNav = styled.ul`
   width: 100%;
@@ -29,11 +33,6 @@ export const SidebarListItem = styled.li`
   position: relative;
   width: 100%;
   list-style: none;
-  &:hover {
-    background: #03a9f4;
-    //border-left: 4px solid #632ce4;
-    cursor: pointer;
-  }
 `;
 
 export const SidebarLink = styled(NavLink)`
@@ -42,10 +41,21 @@ export const SidebarLink = styled(NavLink)`
   width: 100%;
   display: flex;
   text-decoration: none;
-  color: #fff;
+  color: lightgray;
+
+  &:hover {
+    color: #fff;
+
+    cursor: pointer;
+  }
   //set style for a selected menu item
   &.${(props) => props.activeClassName} {
-    color: red;
+    // background: rgba(132, 175, 245, 0.8);
+    background: #42648d;
+    color: #fff;
+    //border-radius: 25px;
+
+    //background-image: linear-gradient(315deg, #e4b5cb 0%, #722ae6 74%);
   }
 `;
 export const SidebarLabel = styled.span`

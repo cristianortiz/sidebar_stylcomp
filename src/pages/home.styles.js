@@ -6,7 +6,6 @@ export const Container = styled.div`
 `;
 export const MainContent = styled.div`
   position: absolute;
-  width: calc(100% - var(--sidebar-width));
   width: ${(props) =>
     props.is_open
       ? `calc(100% - ${props.open_width});`
@@ -16,6 +15,7 @@ export const MainContent = styled.div`
   left: ${(props) =>
     props.is_open ? `${props.open_width}` : `${props.close_width}`};
   min-height: 100vh;
-  background: #f5f5f5;
+  background: #f8f8fa;
   transition: 0.2s ease-in all;
+  color: #1e304a;
 `;

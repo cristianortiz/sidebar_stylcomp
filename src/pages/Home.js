@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Container, MainContent } from "../components/Layout/Layout.styles";
+import { Container, MainContent } from "./home.styles";
 import NavBar from "../components/NavBar/NavBar";
 import Sidebar from "../components/Sidebar/Sidebar";
 import SidebarContext from "../context/Sidebar/SidebarContext";
