@@ -2,7 +2,7 @@ import React from "react";
 import * as FaIcons from "react-icons/fa";
 export const cardsData = [
   {
-    numero: 45,
+    numero: 39,
     titulo: "Matriculados 2021",
     icon: <FaIcons.FaUsers />,
   },
