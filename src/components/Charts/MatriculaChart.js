@@ -28,8 +28,15 @@ const MatriculaChart = ({ Matricula }) => {
         data={chartData}
         options={{
           responsive: true,
-          maintainAspectRatio: false,
-          title: { text: "Matricula 2015 - 2021", display: true },
+          plugins: {
+            legend: {
+              position: "top",
+            },
+            title: {
+              display: true,
+              text: "Matriculados 2015-2021",
+            },
+          },
           scales: {
             yAxes: [
               {

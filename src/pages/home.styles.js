@@ -10,7 +10,6 @@ export const MainContent = styled.div`
     props.is_open
       ? `calc(100% - ${props.open_width});`
       : `calc(100% - ${props.close_width});`};
-  position: fixed;
   //left: var(--sidebar-width);
   left: ${(props) =>
     props.is_open ? `${props.open_width}` : `${props.close_width}`};

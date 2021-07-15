@@ -6,15 +6,14 @@ export const ChartBox = styled.div`
   padding-top: 0;
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   @media (max-width: 992px) {
     grid-template-columns: repeat(1, 1fr);
   }
 `;
 export const ChartContainer = styled.div`
   position: relative;
-  width: 50%;
-  min-height: 350px;
+  //min-height: 350px;
   display: flex;
   background: #fff;
   padding: 20px;
