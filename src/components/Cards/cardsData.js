@@ -22,7 +22,7 @@ export const cardsData = [
     icon: <FaIcons.FaGraduationCap />,
   },
 ];
-
+//for academicos pages data load
 export const academicosData = [
   {
     programa: "Doctorado en Astronomia y Cs Planetarias",
@@ -115,6 +115,166 @@ export const academicosData = [
       },
       {
         nombre: "Milton Cortés",
+        perfil: "Profesor Colaborador",
+        icon: <FaIcons.FaUser />,
+      },
+    ],
+  },
+  {
+    programa: "Magister en Informática y Cs. de la Computación",
+    academicos: [
+      {
+        nombre: "John Castro",
+        perfil: "Coodinadorr",
+        icon: <FaIcons.FaUser />,
+      },
+      {
+        nombre: "Dante Carrizo",
+        perfil: "Profesor de Claustro",
+        icon: <FaIcons.FaUser />,
+      },
+      {
+        nombre: "Vladimir Riffo",
+        perfil: "Profesor de Claustro",
+        icon: <FaIcons.FaUser />,
+      },
+      {
+        nombre: "Wilson Castillo",
+        perfil: "Profesor de Claustro",
+        icon: <FaIcons.FaUser />,
+      },
+      {
+        nombre: "Héctor Cornide",
+        perfil: "Profesor de Claustro",
+        icon: <FaIcons.FaUser />,
+      },
+    ],
+  },
+  {
+    programa: "Magister en Ingeniería en Metalurgia",
+    academicos: [
+      {
+        nombre: "Alexis Guzmán",
+        perfil: "Coodinadorr",
+        icon: <FaIcons.FaUser />,
+      },
+      {
+        nombre: "Danny Guzmán",
+        perfil: "Profesor de Claustro",
+        icon: <FaIcons.FaUser />,
+      },
+      {
+        nombre: "Jonathan Castillo",
+        perfil: "Profesor de Claustro",
+        icon: <FaIcons.FaUser />,
+      },
+      {
+        nombre: "Rossana Sepúlveda",
+        perfil: "Profesor de Claustro",
+        icon: <FaIcons.FaUser />,
+      },
+      {
+        nombre: "Luis Valderrama",
+        perfil: "Profesor de Claustro",
+        icon: <FaIcons.FaUser />,
+      },
+      {
+        nombre: "Osvaldo Pavéz",
+        perfil: "Profesor de Claustro",
+        icon: <FaIcons.FaUser />,
+      },
+      {
+        nombre: "Francisco Torres",
+        perfil: "Profesor Colaborador",
+        icon: <FaIcons.FaUser />,
+      },
+      {
+        nombre: "Udyabhaskar Rednam",
+        perfil: "Profesor Colaborador",
+        icon: <FaIcons.FaUser />,
+      },
+    ],
+  },
+  {
+    programa: "Magister en Metodologías de Investigación Cualitativas en Salud",
+    academicos: [
+      {
+        nombre: "Cory Duarte",
+        perfil: "Coodinadora",
+        icon: <FaIcons.FaUser />,
+      },
+      {
+        nombre: "Taelí Gómez",
+        perfil: "Profesor de Claustro",
+        icon: <FaIcons.FaUser />,
+      },
+      {
+        nombre: "Maggie Campillay",
+        perfil: "Profesor de Claustro",
+        icon: <FaIcons.FaUser />,
+      },
+      {
+        nombre: "Ana Calle",
+        perfil: "Profesor de Claustro",
+        icon: <FaIcons.FaUser />,
+      },
+      {
+        nombre: "Mauricio Lorca",
+        perfil: "Profesor de Claustro",
+        icon: <FaIcons.FaUser />,
+      },
+      {
+        nombre: "Carmen Burgos",
+        perfil: "Profesor de Claustro",
+        icon: <FaIcons.FaUser />,
+      },
+      {
+        nombre: "María González",
+        perfil: "Profesor de Claustro",
+        icon: <FaIcons.FaUser />,
+      },
+    ],
+  },
+  {
+    programa: "Magister en en Investigación Psicológica",
+    academicos: [
+      {
+        nombre: "Elva Morales",
+        perfil: "Coodinadora",
+        icon: <FaIcons.FaUser />,
+      },
+      {
+        nombre: "Ricardo Jorquera",
+        perfil: "Profesor de Claustro",
+        icon: <FaIcons.FaUser />,
+      },
+      {
+        nombre: "Doeuglas Véliz",
+        perfil: "Profesor de Claustro",
+        icon: <FaIcons.FaUser />,
+      },
+      {
+        nombre: "David Cuadra",
+        perfil: "Profesor de Claustro",
+        icon: <FaIcons.FaUser />,
+      },
+      {
+        nombre: "Alejandra Vega",
+        perfil: "Profesor de Claustro",
+        icon: <FaIcons.FaUser />,
+      },
+      {
+        nombre: "Pablo Brizuela",
+        perfil: "Profesor de Claustro",
+        icon: <FaIcons.FaUser />,
+      },
+      {
+        nombre: "Nicolás Díaz",
+        perfil: "Profesor Colaborador",
+        icon: <FaIcons.FaUser />,
+      },
+      {
+        nombre: "Adolfo González",
         perfil: "Profesor Colaborador",
         icon: <FaIcons.FaUser />,
       },

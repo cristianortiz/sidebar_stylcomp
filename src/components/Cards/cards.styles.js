@@ -27,6 +27,7 @@ export const CardContainer = styled.div`
   justify-content: space-between;
   cursor: pointer;
   box-shadow: 2px 5px 4px -2px rgba(0, 0, 0, 0.2);
+  //height: fit-content;
 `;
 
 export const CardBody = styled.div`
@@ -59,6 +60,9 @@ export const CardIcon = styled.div`
 export const AcadListItem = styled.div`
   display: flex;
   width: 100%;
+  border-bottom: 1px solid #e7e7f3;
+  padding-bottom: 15px;
+  font-size: 0.9em;
 `;
 export const AcadImage = styled.div`
   display: inline;
