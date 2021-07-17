@@ -17,6 +17,7 @@ const Dashboard = () => {
       </CardsBox>
       <ChartBox>
         <MatriculaChart Matricula={Matricula} />
+
         <BecadosChart Becados={Becados} />
       </ChartBox>
     </>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Bar } from "react-chartjs-2";
-import { ChartContainer } from "./charts.styles";
+import { ChartContainerLeft } from "./charts.styles";
 
 const BecadosChart = ({ Becados }) => {
   const [chartData, setChartData] = useState({});
@@ -23,11 +23,12 @@ const BecadosChart = ({ Becados }) => {
     Chart();
   }, []);
   return (
-    <ChartContainer>
+    <ChartContainerLeft>
       <Bar
         data={chartData}
         options={{
           responsive: true,
+          maintainAspectRatio: false,
           plugins: {
             legend: {
               position: "top",
@@ -48,7 +49,7 @@ const BecadosChart = ({ Becados }) => {
           },
         }}
       />
-    </ChartContainer>
+    </ChartContainerLeft>
   );
 };
 
