@@ -10,7 +10,7 @@ export const table_columns = [
   { Header: "Graduados", accessor: "graduados" },
   { Header: "Dictación", accessor: "dictacion" },
   { Header: "Costo Total", accessor: "arancel_total" },
-  //{ Header: "Acciones" ,accessor:'nombre',},
+  /*  { Header: "Acciones" ,accessor:'nombre',},  */
 ];
 export const programas = [
   {
