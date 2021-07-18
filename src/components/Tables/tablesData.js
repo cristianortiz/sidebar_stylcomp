@@ -3,7 +3,7 @@ export const table_columns = [
   { Header: "COD", accessor: "codigo" },
   { Header: "Inicio", accessor: "inicio" },
   { Header: "Coord.", accessor: "coordinador" },
-  { Header: "Tipo", accessor: "orientacion" },
+  { Header: "Orientacion", accessor: "orientacion" },
   { Header: "Semestres", accessor: "duracion" },
   { Header: "Mat. Actual", accessor: "matriculados" },
   { Header: "Becados", accessor: "becados" },

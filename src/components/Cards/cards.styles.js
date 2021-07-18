@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { FaStaylinked } from "react-icons/fa";
 
 export const CardsBox = styled.div`
   position: relative;
@@ -45,12 +46,9 @@ export const CardNumber = styled.div`
 export const CardTitle = styled.div`
   display: block;
   color: #6c757d;
-  font-size: 1em;
+  font-size: 0.9em;
 `;
-export const CardTitleH2 = styled.h2`
-  color: #6c757d;
-  font-size: 1em;
-`;
+
 export const CardIcon = styled.div`
   display: inline-block;
   font-size: 2em;
@@ -78,4 +76,22 @@ export const AcadName = styled.div`
 `;
 export const AcadRole = styled.p`
   color: #6c757d;
+`;
+
+export const ProgramaCardTitle = styled.div`
+  display: flex;
+  color: #6c757d;
+  font-size: 0.9em;
+  width: 80%;
+`;
+
+export const ProgramaCardIcon = styled.div`
+  right: 0;
+  display: inline-flex;
+  font-size: 3em;
+  color: #5387c5;
+  position: absolute;
+  top: 0;
+  margin-top: 0.3em;
+  margin-right: 0.3em;
 `;

@@ -6,6 +6,7 @@ export const TablesBox = styled.div`
   box-shadow: 2px 5px 4px -2px rgba(0, 0, 0, 0.2);
   margin: 10px;
   display: flex;
+  overflow: hidden;
   //height: fit-content;
 `;
 
@@ -13,7 +14,6 @@ export const Table = styled.table`
   width: 100%;
   border-collapse: collapse;
   font-size: 0.75rem;
-  overflow: hidden;
 `;
 export const Thead = styled.thead`
   background: #e1edfb7d;

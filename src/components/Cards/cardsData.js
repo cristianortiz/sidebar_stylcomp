@@ -1,5 +1,8 @@
 import React from "react";
 import * as FaIcons from "react-icons/fa";
+import * as GoIcons from "react-icons/go";
+import * as AiIcons from "react-icons/ai";
+import * as GiIcons from "react-icons/gi";
 export const cardsData = [
   {
     numero: 39,
@@ -279,5 +282,66 @@ export const academicosData = [
         icon: <FaIcons.FaUser />,
       },
     ],
+  },
+];
+
+export const ProgramasCardsData = [
+  {
+    nombre: "Doctorado en Astronomía y Cs. Planetarias",
+    icon: <GoIcons.GoTelescope />,
+    coordinador: "Lorenzo Morelli",
+    orientacion: "Académica",
+    matriculados: 19,
+    becados: 19,
+    graduados: 0,
+  },
+  {
+    nombre: "Magister en Estadística",
+    icon: <AiIcons.AiOutlineFunction />,
+    coordinador: "Yolanda Gómez",
+    orientacion: "Académica",
+    matriculados: 4,
+    becados: 3,
+    graduados: 1,
+  },
+  {
+    nombre: "Magister en Informática y Cs. de la Computación",
+    icon: <AiIcons.AiFillCode />,
+    coordinador: "John Castro",
+    orientacion: "Académica",
+    duracion: 4,
+    matriculados: 4,
+    becados: 4,
+    graduados: 15,
+  },
+  {
+    nombre: "Magister en Ingeniería en Metalurgia",
+    icon: <GiIcons.GiMeltingMetal />,
+    coordinador: "Alexis Guzmán",
+    orientacion: "Académica",
+    duracion: 4,
+    matriculados: 11,
+    becados: 10,
+    graduados: 5,
+  },
+  {
+    nombre: "Magister en Metodologías de Investigación Cualitativas en Salud",
+    icon: <FaIcons.FaNotesMedical />,
+    coordinador: "Cory Duarte",
+    orientacion: "Académica",
+    duracion: 2,
+    matriculados: 8,
+    becados: 8,
+    graduados: 5,
+  },
+  {
+    nombre: "Magister en Investigación Psicológica",
+    icon: <GiIcons.GiPsychicWaves />,
+    coordinador: "Elva Morales",
+    orientacion: "Académica",
+    duracion: 4,
+    matriculados: 8,
+    becados: 8,
+    graduados: 5,
   },
 ];
