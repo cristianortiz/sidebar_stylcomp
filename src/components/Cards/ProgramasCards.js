@@ -1,53 +1,53 @@
 import React from "react";
 import {
-  AcadListItem,
-  AcadName,
-  AcadRole,
+  CardListItem,
+  CardItemText,
+  CardItemSubtext,
   CardBody,
   CardContainer,
-  ProgramaCardTitle,
-  ProgramaCardIcon,
+  CardTitleFlex,
+  CardTitleIcon,
 } from "./cards.styles";
 
 const ProgramasCards = ({ item }) => {
   return (
     <>
       <CardContainer block={true}>
-        <ProgramaCardTitle>
+        <CardTitleFlex>
           <h3>{item.nombre}</h3>
-        </ProgramaCardTitle>
-        <ProgramaCardIcon>{item.icon}</ProgramaCardIcon>
+        </CardTitleFlex>
+        <CardTitleIcon>{item.icon}</CardTitleIcon>
         <CardBody margin={true}>
-          <AcadListItem>
-            <AcadName>
+          <CardListItem>
+            <CardItemText>
               <h4>{item.matriculados} Alumnos</h4>
 
-              <AcadRole>Matrícula Actual</AcadRole>
-            </AcadName>
-          </AcadListItem>
-          <AcadListItem>
-            <AcadName>
+              <CardItemSubtext>Matrícula Actual</CardItemSubtext>
+            </CardItemText>
+          </CardListItem>
+          <CardListItem>
+            <CardItemText>
               <h4>{item.becados} Alumnos Becados</h4>
-              <AcadRole>Matricula Actual</AcadRole>
-            </AcadName>
-          </AcadListItem>
-          <AcadListItem>
-            <AcadName>
+              <CardItemSubtext>Matricula Actual</CardItemSubtext>
+            </CardItemText>
+          </CardListItem>
+          <CardListItem>
+            <CardItemText>
               <h4>{item.graduados} Graduados</h4>
-              <AcadRole>Desde su inicio</AcadRole>
-            </AcadName>
-          </AcadListItem>
-          <AcadListItem>
-            <AcadName>
+              <CardItemSubtext>Desde su inicio</CardItemSubtext>
+            </CardItemText>
+          </CardListItem>
+          <CardListItem>
+            <CardItemText>
               <h4>{item.coordinador}</h4>
-              <AcadRole>Coordinador</AcadRole>
-            </AcadName>
-          </AcadListItem>
-          <AcadListItem>
-            <AcadName>
+              <CardItemSubtext>Coordinador</CardItemSubtext>
+            </CardItemText>
+          </CardListItem>
+          <CardListItem>
+            <CardItemText>
               <h4>Orientación {item.orientacion}</h4>
-            </AcadName>
-          </AcadListItem>
+            </CardItemText>
+          </CardListItem>
         </CardBody>
       </CardContainer>
     </>

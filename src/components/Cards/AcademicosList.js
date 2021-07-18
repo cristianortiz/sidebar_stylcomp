@@ -1,12 +1,13 @@
 import React from "react";
 import {
   CardContainer,
-  CardTitle,
   CardBody,
-  AcadListItem,
-  AcadImage,
-  AcadName,
-  AcadRole,
+  CardTitleFlex,
+  CardTitleIcon,
+  CardListItem,
+  CardItemImage,
+  CardItemText,
+  CardItemSubtext,
 } from "./cards.styles";
 
 const AcademicosList = ({ academicosData }) => {
@@ -18,20 +19,21 @@ const AcademicosList = ({ academicosData }) => {
         return (
           <CardContainer item={item} key={index} block={true}>
             {
-              <CardTitle>
+              <CardTitleFlex>
                 <h3>{item.programa}</h3>
-              </CardTitle>
+              </CardTitleFlex>
             }
+            <CardTitleIcon>{item.icon}</CardTitleIcon>
             <CardBody margin={true}>
               {item.academicos.map((item2, index) => {
                 return (
-                  <AcadListItem item2={item2} key={index}>
-                    {<AcadImage>{item2.icon}</AcadImage>}
-                    <AcadName>
+                  <CardListItem item2={item2} key={index}>
+                    {<CardItemImage>{item2.icon}</CardItemImage>}
+                    <CardItemText>
                       <h4>{item2.nombre}</h4>
-                      <AcadRole>{item2.perfil}</AcadRole>
-                    </AcadName>
-                  </AcadListItem>
+                      <CardItemSubtext>{item2.perfil}</CardItemSubtext>
+                    </CardItemText>
+                  </CardListItem>
                 );
               })}
             </CardBody>

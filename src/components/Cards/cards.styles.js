@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
-import { FaStaylinked } from "react-icons/fa";
 
+//-----general styles for all types of cards----
 export const CardsBox = styled.div`
   position: relative;
   width: 100%;
@@ -8,9 +8,6 @@ export const CardsBox = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
-  /* @media (max-width: ${(props) => (props.keep_size ? "1280px" : "992px")}) {
-    grid-template-columns: repeat(2, 1fr);
-  } */
   @media (max-width: 992px) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -36,7 +33,7 @@ export const CardBody = styled.div`
   margin-top: ${(props) =>
     props.margin ? "20px" : "0"}; //for Academic card body
 `;
-
+//------general styles for simple cards in Dashboard-----
 export const CardNumber = styled.div`
   position: relative;
   font-size: 2em;
@@ -48,44 +45,20 @@ export const CardTitle = styled.div`
   color: #6c757d;
   font-size: 0.9em;
 `;
-
 export const CardIcon = styled.div`
   display: inline-block;
   font-size: 2em;
   color: #5387c5;
 `;
-
-export const AcadListItem = styled.div`
-  display: flex;
-  width: 100%;
-  border-bottom: 1px solid #e7e7f3;
-  padding-bottom: 15px;
-  font-size: 0.9em;
-`;
-export const AcadImage = styled.div`
-  display: inline;
-  font-size: 2em;
-  color: #5387c5;
-  margin-right: 20px;
-  padding: 15px 0 0 0;
-`;
-export const AcadName = styled.div`
-  color: #6c757d;
-  font-size: 1em;
-  padding-top: 15px;
-`;
-export const AcadRole = styled.p`
-  color: #6c757d;
-`;
-
-export const ProgramaCardTitle = styled.div`
+//---styles for cards with vertical items list Programas, Academicos----
+export const CardTitleFlex = styled.div`
   display: flex;
   color: #6c757d;
   font-size: 0.9em;
   width: 80%;
 `;
 
-export const ProgramaCardIcon = styled.div`
+export const CardTitleIcon = styled.div`
   right: 0;
   display: inline-flex;
   font-size: 3em;
@@ -94,4 +67,27 @@ export const ProgramaCardIcon = styled.div`
   top: 0;
   margin-top: 0.3em;
   margin-right: 0.3em;
+`;
+
+export const CardListItem = styled.div`
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #e7e7f3;
+  padding-bottom: 15px;
+  font-size: 0.9em;
+`;
+export const CardItemImage = styled.div`
+  display: inline;
+  font-size: 2em;
+  color: #5387c5;
+  margin-right: 20px;
+  padding: 15px 0 0 0;
+`;
+export const CardItemText = styled.div`
+  color: #6c757d;
+  font-size: 1em;
+  padding-top: 15px;
+`;
+export const CardItemSubtext = styled.p`
+  color: #6c757d;
 `;

@@ -3,6 +3,15 @@ import * as FaIcons from "react-icons/fa";
 import * as GoIcons from "react-icons/go";
 import * as AiIcons from "react-icons/ai";
 import * as GiIcons from "react-icons/gi";
+import * as RiIcons from "react-icons/ri";
+
+const iconInformatica = <AiIcons.AiFillCode />;
+const iconPlanetarias = <GoIcons.GoTelescope />;
+const iconEstadistica = <AiIcons.AiOutlineFunction />;
+const iconMetalurgia = <GiIcons.GiMeltingMetal />;
+const iconMetSalud = <FaIcons.FaNotesMedical />;
+const iconPsicologia = <RiIcons.RiPsychotherapyFill />;
+
 export const cardsData = [
   {
     numero: 39,
@@ -29,6 +38,7 @@ export const cardsData = [
 export const academicosData = [
   {
     programa: "Doctorado en Astronomia y Cs Planetarias",
+    icon: iconPlanetarias,
     academicos: [
       {
         nombre: "Lorenzo Morelli",
@@ -79,6 +89,7 @@ export const academicosData = [
   },
   {
     programa: "Magister en Estadística",
+    icon: iconEstadistica,
     academicos: [
       {
         nombre: "Yolanda Gómez",
@@ -125,6 +136,7 @@ export const academicosData = [
   },
   {
     programa: "Magister en Informática y Cs. de la Computación",
+    icon: iconInformatica,
     academicos: [
       {
         nombre: "John Castro",
@@ -155,6 +167,7 @@ export const academicosData = [
   },
   {
     programa: "Magister en Ingeniería en Metalurgia",
+    icon: iconMetalurgia,
     academicos: [
       {
         nombre: "Alexis Guzmán",
@@ -200,6 +213,7 @@ export const academicosData = [
   },
   {
     programa: "Magister en Metodologías de Investigación Cualitativas en Salud",
+    icon: iconMetSalud,
     academicos: [
       {
         nombre: "Cory Duarte",
@@ -240,6 +254,8 @@ export const academicosData = [
   },
   {
     programa: "Magister en en Investigación Psicológica",
+    icon: iconPsicologia,
+
     academicos: [
       {
         nombre: "Elva Morales",
@@ -288,7 +304,7 @@ export const academicosData = [
 export const ProgramasCardsData = [
   {
     nombre: "Doctorado en Astronomía y Cs. Planetarias",
-    icon: <GoIcons.GoTelescope />,
+    icon: iconPlanetarias,
     coordinador: "Lorenzo Morelli",
     orientacion: "Académica",
     matriculados: 19,
@@ -297,7 +313,7 @@ export const ProgramasCardsData = [
   },
   {
     nombre: "Magister en Estadística",
-    icon: <AiIcons.AiOutlineFunction />,
+    icon: iconEstadistica,
     coordinador: "Yolanda Gómez",
     orientacion: "Académica",
     matriculados: 4,
@@ -306,7 +322,7 @@ export const ProgramasCardsData = [
   },
   {
     nombre: "Magister en Informática y Cs. de la Computación",
-    icon: <AiIcons.AiFillCode />,
+    icon: iconInformatica,
     coordinador: "John Castro",
     orientacion: "Académica",
     duracion: 4,
@@ -316,7 +332,7 @@ export const ProgramasCardsData = [
   },
   {
     nombre: "Magister en Ingeniería en Metalurgia",
-    icon: <GiIcons.GiMeltingMetal />,
+    icon: iconMetalurgia,
     coordinador: "Alexis Guzmán",
     orientacion: "Académica",
     duracion: 4,
@@ -326,7 +342,7 @@ export const ProgramasCardsData = [
   },
   {
     nombre: "Magister en Metodologías de Investigación Cualitativas en Salud",
-    icon: <FaIcons.FaNotesMedical />,
+    icon: iconMetSalud,
     coordinador: "Cory Duarte",
     orientacion: "Académica",
     duracion: 2,
@@ -336,7 +352,7 @@ export const ProgramasCardsData = [
   },
   {
     nombre: "Magister en Investigación Psicológica",
-    icon: <GiIcons.GiPsychicWaves />,
+    icon: iconPsicologia,
     coordinador: "Elva Morales",
     orientacion: "Académica",
     duracion: 4,
