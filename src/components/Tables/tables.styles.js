@@ -21,9 +21,7 @@ export const Thead = styled.thead`
 export const Tbody = styled.tbody`
   vertical-align: middle;
 `;
-export const Tr = styled.tr`
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-`;
+export const Tr = styled.tr``;
 
 export const Th = styled.th`
   padding: 0.6rem 0.3rem;
@@ -36,4 +34,5 @@ export const Th = styled.th`
 export const Td = styled.td`
   padding: 0.9rem 0.5rem;
   text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 `;
