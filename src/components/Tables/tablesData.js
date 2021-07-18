@@ -1,15 +1,15 @@
 export const table_columns = [
   { Header: "Nombre", accessor: "nombre" },
-  { Header: "Código", accessor: "codigo" },
+  { Header: "COD", accessor: "codigo" },
   { Header: "Inicio", accessor: "inicio" },
-  { Header: "Coordinador", accessor: "coordinador" },
-  { Header: "Orientación", accessor: "orientacion" },
+  { Header: "Coord.", accessor: "coordinador" },
+  { Header: "Tipo", accessor: "orientacion" },
   { Header: "Semestres", accessor: "duracion" },
-  { Header: "Matrícula Actual", accessor: "matriculados" },
+  { Header: "Mat. Actual", accessor: "matriculados" },
   { Header: "Becados", accessor: "becados" },
   { Header: "Graduados", accessor: "graduados" },
   { Header: "Dictación", accessor: "dictacion" },
-  { Header: "Arancel Total", accessor: "arancel_total" },
+  { Header: "Costo Total", accessor: "arancel_total" },
   //{ Header: "Acciones" ,accessor:'nombre',},
 ];
 export const programas = [

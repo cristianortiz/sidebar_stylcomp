@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import { useTable } from "react-table";
-import { TableContainer } from "./tables.styles";
+import { Table, Thead, Tr, Th, Tbody, Td } from "./tables.styles";
 import { table_columns, programas } from "./tablesData";
 
 const ProgramasTable = () => {
@@ -14,29 +14,29 @@ const ProgramasTable = () => {
     tableInstance;
 
   return (
-    <table {...getTableProps()}>
-      <thead>
+    <Table {...getTableProps()}>
+      <Thead>
         {headerGroups.map((headerGroup) => (
-          <tr {...headerGroup.getHeaderGroupProps()}>
+          <Tr {...headerGroup.getHeaderGroupProps()}>
             {headerGroup.headers.map((column) => (
-              <th {...column.getHeaderProps()}>{column.render("Header")}</th>
+              <Th {...column.getHeaderProps()}>{column.render("Header")}</Th>
             ))}
-          </tr>
+          </Tr>
         ))}
-      </thead>
-      <tbody {...getTableBodyProps()}>
+      </Thead>
+      <Tbody {...getTableBodyProps()}>
         {rows.map((row) => {
           prepareRow(row);
           return (
-            <tr {...row.getRowProps()}>
+            <Tr {...row.getRowProps()}>
               {row.cells.map((cell) => {
-                return <td {...cell.getCellProps()}>{cell.render("Cell")}</td>;
+                return <Td {...cell.getCellProps()}>{cell.render("Cell")}</Td>;
               })}
-            </tr>
+            </Tr>
           );
         })}
-      </tbody>
-    </table>
+      </Tbody>
+    </Table>
   );
 };
 
