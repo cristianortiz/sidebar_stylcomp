@@ -13,7 +13,8 @@ import Programas from "./Programas/Programas";
 
 const Home = () => {
   //destructuring props from sidebar state
-  const { is_open, open_width, close_width } = useContext(SidebarContext);
+  const { is_open, open_width, close_width, hide_sidebar } =
+    useContext(SidebarContext);
 
   return (
     <Router>
@@ -23,6 +24,7 @@ const Home = () => {
           is_open={is_open}
           open_width={open_width}
           close_width={close_width}
+          hide_sidebar={hide_sidebar}
         >
           <NavBar />
           <Switch>

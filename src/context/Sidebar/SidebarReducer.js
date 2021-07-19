@@ -1,4 +1,4 @@
-import { OPEN_SIDEBAR } from "../../types";
+import { HIDE_SIDEBAR, OPEN_SIDEBAR } from "../../types";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (state, action) => {
@@ -9,12 +9,11 @@ export default (state, action) => {
         //sidebar_width: action.payload,
         is_open: action.payload,
       };
-    /* case ITEM_SELECTED:
+    case HIDE_SIDEBAR:
       return {
         ...state,
-        //sidebar_width: action.payload,
-        item_selected: action.payload,
-      }; */
+        hide_sidebar: action.payload,
+      };
 
     default:
       return state;

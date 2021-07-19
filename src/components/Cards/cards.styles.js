@@ -72,8 +72,8 @@ export const CardTitleIcon = styled.div`
 export const CardListItem = styled.div`
   display: flex;
   width: 100%;
-  border-bottom: 1px solid #e7e7f3;
-  padding-bottom: 15px;
+  //border-bottom: 1px solid #e7e7f3;
+  //padding-bottom: 15px;
   font-size: 0.9em;
 `;
 export const CardItemImage = styled.div`

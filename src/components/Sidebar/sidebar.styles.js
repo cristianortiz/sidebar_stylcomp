@@ -2,13 +2,23 @@ import styled from "@emotion/styled";
 import { NavLink } from "react-router-dom";
 
 export const SidebarContainer = styled.div`
-  width: ${(props) => (props.is_open ? props.open_width : props.close_width)};
+  width: ${(props) =>
+    props.is_open && !props.hide_sidebar
+      ? props.open_width
+      : props.close_width};
   position: fixed;
   color: #fff;
   height: 100%;
   background: #29405c;
   overflow: hidden;
   transition: 0.2s ease-in all;
+  @media (max-width: 992px) {
+    transition: 0.2s ease-in all;
+    ${(props) =>
+      !props.is_open && props.hide_sidebar
+        ? `left:-${props.open_width};`
+        : `left:0; width:${props.open_width};`}
+  }
 `;
 export const SidebarHeader = styled.div`
   position: relative;

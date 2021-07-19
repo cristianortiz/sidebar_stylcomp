@@ -17,4 +17,17 @@ export const MainContent = styled.div`
   background: #f8f8fa;
   transition: 0.2s ease-in all;
   color: #1e304a;
+  @media (max-width: 992px) {
+    /* width: 100%;
+    left: 0; */
+    ${(props) =>
+      !props.is_open && props.hide_sidebar
+        ? `left:0; width:100%;`
+        : `left:${props.open_width}; width:calc(100% - ${props.open_width});`}
+  }
+
+  /* @media (max-width: 480px) {
+    width: 100%;
+    left: 0;
+  } */
 `;

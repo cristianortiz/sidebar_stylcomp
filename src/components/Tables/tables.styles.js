@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
 export const TablesBox = styled.div`
-  width: 97%;
+  width: 98%;
   padding: 0px;
   background: #fff;
   box-shadow: 2px 5px 4px -2px rgba(0, 0, 0, 0.2);
-  margin: 20px;
+  margin: 0px 10px 0 20px;
   display: flex;
   overflow: hidden;
   //height: fit-content;
