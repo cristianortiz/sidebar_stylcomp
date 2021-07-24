@@ -16,8 +16,8 @@ export const SidebarContainer = styled.div`
     transition: 0.2s ease-in all;
     ${(props) =>
       !props.is_open && props.hide_sidebar
-        ? `left:-${props.open_width};`
-        : `left:0; width:${props.open_width};`}
+        ? `left:-${props.close_width};`
+        : `left:0; width:${props.close_width};`}
   }
 `;
 export const SidebarHeader = styled.div`

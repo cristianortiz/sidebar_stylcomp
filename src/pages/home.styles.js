@@ -23,7 +23,7 @@ export const MainContent = styled.div`
     ${(props) =>
       !props.is_open && props.hide_sidebar
         ? `left:0; width:100%;`
-        : `left:${props.open_width}; width:calc(100% - ${props.open_width});`}
+        : `left:${props.close_width}; width:calc(100% - ${props.close_width});`}
   }
 
   /* @media (max-width: 480px) {
