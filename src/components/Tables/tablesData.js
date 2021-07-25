@@ -9,7 +9,7 @@ export const table_columns = [
   { Header: "Becados", accessor: "becados" },
   { Header: "Graduados", accessor: "graduados" },
   { Header: "Dictación", accessor: "dictacion" },
-  { Header: "Costo Total", accessor: "arancel_total" },
+  /* { Header: "Costo Total", accessor: "arancel_total" }, */
   /*  { Header: "Acciones" ,accessor:'nombre',},  */
 ];
 export const programas = [
@@ -24,7 +24,7 @@ export const programas = [
     becados: 19,
     graduados: 0,
     dictacion: "regular",
-    arancel_total: 13200000,
+    /*  arancel_total: 13200000, */
   },
   {
     nombre: "Magister en Estadística",
@@ -37,7 +37,6 @@ export const programas = [
     becados: 3,
     graduados: 1,
     dictacion: "regular",
-    arancel_total: 1055000,
   },
   {
     nombre: "Magister en Informática y Cs. de la Computación",
@@ -50,7 +49,6 @@ export const programas = [
     becados: 4,
     graduados: 15,
     dictacion: "regular",
-    arancel_total: 1300000,
   },
   {
     nombre: "Magister en Ingeniería en Metalurgia",
@@ -63,7 +61,6 @@ export const programas = [
     becados: 10,
     graduados: 5,
     dictacion: "regular",
-    arancel_total: 1755600,
   },
   {
     nombre: "Magister en Metodologías de Investigación Cualitativas en Salud",
@@ -76,7 +73,6 @@ export const programas = [
     becados: 8,
     graduados: 5,
     dictacion: "regular",
-    arancel_total: 2000000,
   },
   {
     nombre: "Magister en Investigación Psicológica",
@@ -89,6 +85,5 @@ export const programas = [
     becados: 8,
     graduados: 5,
     dictacion: "regular",
-    arancel_total: 4000000,
   },
 ];

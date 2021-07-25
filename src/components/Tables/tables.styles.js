@@ -4,7 +4,7 @@ export const TablesBox = styled.div`
   padding: 0px;
   background: #fff;
   box-shadow: 2px 5px 4px -2px rgba(0, 0, 0, 0.2);
-  margin: 0px 10px 0 20px;
+  margin: 0px 10px 20px 20px;
   display: flex;
   overflow: hidden;
   //height: fit-content;
