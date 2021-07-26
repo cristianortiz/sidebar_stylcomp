@@ -14,7 +14,7 @@ export const NavBarContainer = styled.div`
 `;
 
 export const NavBarIcon = styled(Link)`
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   font-size: 2rem;
   color: #303a5f;
 `;

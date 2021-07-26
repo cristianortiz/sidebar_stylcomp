@@ -1,22 +1,22 @@
 import styled from "@emotion/styled";
 export const TablesBox = styled.div`
-  width: 98%;
-  padding: 0px;
-  background: #fff;
-  box-shadow: 2px 5px 4px -2px rgba(0, 0, 0, 0.2);
-  margin: 0px 10px 20px 20px;
+  width: 100%;
+  padding: 20px;
   display: flex;
-  overflow: hidden;
+  overflow-x: scroll;
   //height: fit-content;
 `;
 
 export const Table = styled.table`
+  background-color: #fff;
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
+  box-shadow: 2px 5px 4px -2px rgba(0, 0, 0, 0.2);
 `;
 export const Thead = styled.thead`
-  background: #e1edfb7d;
+  background: #42648d;
+  color: #fff;
 `;
 export const Tbody = styled.tbody`
   vertical-align: middle;

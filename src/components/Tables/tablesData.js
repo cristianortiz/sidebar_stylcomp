@@ -1,5 +1,5 @@
 export const table_columns = [
-  { Header: "Nombre", accessor: "nombre" },
+  { Header: "Programa", accessor: "nombre" },
   { Header: "COD", accessor: "codigo" },
   { Header: "Inicio", accessor: "inicio" },
   { Header: "Coord.", accessor: "coordinador" },
