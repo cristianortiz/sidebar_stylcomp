@@ -40,14 +40,27 @@ export const Td = styled.td`
 export const GlobalSearch = styled.div`
   width: 100%;
   display: block;
-  padding: 0 0 20px 0;
+  padding: 0 0 10px 0;
 `;
 export const GlobalSearchInput = styled.input`
   padding: 3px 3px 3px 5px;
   border: 1px solid lightgray;
   border-radius: 5px;
 `;
-export const TablePagination = styled.div``;
+export const TablePagination = styled.div`
+  padding: 15px 0 0 0;
+`;
 
-export const PageButton = styled.button``;
+export const PageButton = styled.button`
+  background: #42648d;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.5em;
+  margin: 0 0.5em 0 0.5em;
+  border-radius: 0.6em;
+  &:hover {
+    border: 1px solid black;
+  }
+`;
+
 export const PageNumbers = styled.span``;
