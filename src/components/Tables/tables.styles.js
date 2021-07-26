@@ -36,14 +36,18 @@ export const Td = styled.td`
   text-align: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 `;
+//globalFilter component styles to table
 export const GlobalSearch = styled.div`
   width: 100%;
   display: block;
   padding: 0 0 20px 0;
 `;
-
 export const GlobalSearchInput = styled.input`
   padding: 3px 3px 3px 5px;
   border: 1px solid lightgray;
   border-radius: 5px;
 `;
+export const TablePagination = styled.div``;
+
+export const PageButton = styled.button``;
+export const PageNumbers = styled.span``;

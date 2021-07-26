@@ -1,7 +1,17 @@
 import React, { useMemo } from "react";
-import { useTable, useGlobalFilter } from "react-table";
+import { useTable, useGlobalFilter, usePagination } from "react-table";
 import GlobalFilter from "./GlobalFilter";
-import { Table, Thead, Tr, Th, Tbody, Td } from "./tables.styles";
+import {
+  Table,
+  Thead,
+  Tr,
+  Th,
+  Tbody,
+  Td,
+  TablePagination,
+  PageButton,
+  PageNumbers,
+} from "./tables.styles";
 import { table_columns, programas } from "./tablesData";
 
 const ProgramasTable = () => {
@@ -12,19 +22,27 @@ const ProgramasTable = () => {
       columns,
       data,
     },
-    useGlobalFilter
+    useGlobalFilter,
+    usePagination
   );
   const {
     getTableProps,
     getTableBodyProps,
     headerGroups,
-    rows,
+    page,
+    nextPage,
+    previousPage,
+    canNextPage,
+    canPreviousPage,
+    pageOptions,
+    gotoPage,
+    pageCount,
     prepareRow,
     state,
     setGlobalFilter,
   } = tableInstance;
 
-  const { globalFilter } = state;
+  const { globalFilter, pageIndex } = state;
 
   return (
     <>
@@ -40,7 +58,7 @@ const ProgramasTable = () => {
           ))}
         </Thead>
         <Tbody {...getTableBodyProps()}>
-          {rows.map((row) => {
+          {page.map((row) => {
             prepareRow(row);
             return (
               <Tr {...row.getRowProps()}>
@@ -54,6 +72,26 @@ const ProgramasTable = () => {
           })}
         </Tbody>
       </Table>
+      <TablePagination>
+        <PageNumbers>
+          Pagina {pageIndex + 1} of {pageOptions.length}{" "}
+        </PageNumbers>
+        <PageButton onClick={() => gotoPage(0)} disable={!canPreviousPage}>
+          {"<<"}
+        </PageButton>
+        <PageButton onClick={() => previousPage()} disable={!canPreviousPage}>
+          Anterior
+        </PageButton>
+        <PageButton onClick={() => nextPage()} disable={!canNextPage}>
+          Siguiente
+        </PageButton>
+        <PageButton
+          onClick={() => gotoPage(pageCount - 1)}
+          disable={!canNextPage}
+        >
+          {">>"}
+        </PageButton>
+      </TablePagination>
     </>
   );
 };
