@@ -1,5 +1,5 @@
 import React from "react";
-import Cards from "../../components/Cards/Cards";
+import DashboardCards from "../../components/Cards/DashboardCards";
 import { CardsBox } from "../../components/Cards/cards.styles";
 import { cardsData } from "../../components/Cards/cardsData";
 import BecadosChart from "../../components/Charts/BecadosChart";
@@ -12,7 +12,7 @@ const Dashboard = () => {
     <>
       <CardsBox>
         {cardsData.map((item, index) => {
-          return <Cards item={item} key={index} />;
+          return <DashboardCards item={item} key={index} />;
         })}
       </CardsBox>
       <ChartBox>

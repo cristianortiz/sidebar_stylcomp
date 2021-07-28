@@ -361,3 +361,20 @@ export const ProgramasCardsData = [
     graduados: 5,
   },
 ];
+
+export const BecasCardsData = [
+  {
+    nombre: "Beca de Excención de Arancel",
+    icon: <FaIcons.FaMoneyCheckAlt />,
+    periodo: "2021",
+    becados: 22,
+    total_anual: 25000000,
+  },
+  {
+    nombre: "Beca de Ayuda Económica",
+    icon: <FaIcons.FaMoneyCheckAlt />,
+    periodo: "2021",
+    becados: 18,
+    total_anual: 85000000,
+  },
+];

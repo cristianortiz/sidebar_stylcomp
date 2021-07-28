@@ -9,3 +9,22 @@ export const Becados = {
   labels: ["2015", "2016", "2017", "2018", "2019", "2020", "2021"],
   data: [8, 15, 25, 30, 28, 30, 35],
 };
+
+export const becadosProgramas = {
+  label: "Becados por Programa",
+  labels: [
+    "Doctorado",
+    "Informática",
+    "Metalurgia",
+    "Estadística",
+    "Met. Salud",
+    "Psicologia",
+  ],
+  data: [8, 4, 11, 4, 8, 1],
+};
+
+export const DistBecas = {
+  label: "Beneficiados por Tipo de Beca",
+  labels: ["Arancel y Ayuda Econom.", "Arancel"],
+  data: [37, 6],
+};

@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from "./cards.styles";
 
-const Cards = ({ item }) => {
+const DashboardCards = ({ item }) => {
   return (
     <>
       <CardContainer>
@@ -21,4 +21,4 @@ const Cards = ({ item }) => {
   );
 };
 
-export default Cards;
+export default DashboardCards;

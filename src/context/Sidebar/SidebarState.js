@@ -32,7 +32,7 @@ const SidebarState = (props) => {
   }, []);
 
   //to open and close sidebar based on click in the navbar toggles
-  const setOpen = (value, window) => {
+  const setOpen = (value) => {
     dispatch({
       type: OPEN_SIDEBAR,
       payload: value,
