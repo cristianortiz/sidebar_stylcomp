@@ -28,3 +28,19 @@ export const DistBecas = {
   labels: ["Arancel y Ayuda Econom.", "Arancel"],
   data: [37, 6],
 };
+export const DistBecasProgramas = {
+  labels: [
+    "Doctorado",
+    "Informática",
+    "Metalurgia",
+    "Estadística",
+    "Met. Salud",
+    "Psicología",
+  ],
+
+  label: "Arancel y Ayuda Econom.",
+  data: [8, 4, 9, 3, 4, 1],
+
+  label1: "Arancel",
+  data1: [0, 0, 2, 1, 4, 0],
+};

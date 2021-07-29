@@ -3,8 +3,12 @@ import BecasCards from "../../components/Cards/BecasCards";
 import { CardsBox } from "../../components/Cards/cards.styles";
 import { BecasCardsData } from "../../components/Cards/cardsData";
 import { ChartBox } from "../../components/Charts/charts.styles";
-import { DistBecas } from "../../components/Charts/ChartsData";
+import {
+  DistBecas,
+  DistBecasProgramas,
+} from "../../components/Charts/ChartsData";
 import DistribucionBecas from "../../components/Charts/DistribucionBecas";
+import DistribucionBecasProgramas from "../../components/Charts/DistribucionBecasProgramas";
 
 const Becas = () => {
   return (
@@ -16,6 +20,7 @@ const Becas = () => {
       </CardsBox>
       <ChartBox>
         <DistribucionBecas DistBecas={DistBecas} />
+        <DistribucionBecasProgramas DistBecasProgramas={DistBecasProgramas} />
       </ChartBox>
     </>
   );

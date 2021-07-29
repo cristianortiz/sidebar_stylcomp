@@ -17,7 +17,7 @@ const DistribucionBecas = ({ DistBecas }) => {
             "rgba(54, 162, 235, 0.2)",
           ],
           borderColor: ["rgba(255, 99, 132, 1)", "rgba(54, 162, 235, 1)"],
-          borderWidth: 2,
+          borderWidth: 1,
         },
       ],
     });
