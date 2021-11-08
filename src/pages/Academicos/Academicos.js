@@ -15,7 +15,7 @@ const Academicos = () => {
     getAcademicos();
     //eslint-disable-next-line
   }, []);
-  console.log(academicos)
+  //console.log(academicos)
   return (
     <>
       <CardsBox keep_size={true}>

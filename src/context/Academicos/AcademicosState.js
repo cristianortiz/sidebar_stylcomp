@@ -15,6 +15,7 @@ const AcademicosState = (props) => {
  //CRUD ACTIONS through dipatch
  const getAcademicos = async()=>{
      const response = await axiosClient.get('investigadores')
+     //
      console.log(response)
      dispatch({
         //type to handle show_form state prop
