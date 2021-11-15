@@ -1,11 +1,11 @@
-import { GET_ACADEMICOS } from "../../types";
+import { GET_CLAUSTROS } from "../../types";
 
 export default(state,action)=>{
     switch(action.type){
-        case GET_ACADEMICOS:
+        case GET_CLAUSTROS:
         return{
           ...state,
-          academicos: action.payload, //load academicos payload to academicosState
+          claustrosProgramas: action.payload, //load academicos payload to academicosState
 
         }
         default:

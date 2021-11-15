@@ -1,4 +1,5 @@
 import React from "react";
+import * as FaIcons from "react-icons/fa";
 import {
   CardContainer,
   CardBody,
@@ -10,17 +11,18 @@ import {
   CardItemSubtext,
 } from "./cards.styles";
 
-const AcademicosList = ({ academicosData }) => {
-  console.log(academicosData);
 
+
+const AcademicosList = ({claustrosProgramas}) => {
+ 
   return (
     <>
-      {academicosData.map((item, index) => {
+      {claustrosProgramas.map((item, index) => {
         return (
           <CardContainer item={item} key={index} block={true}>
             {
               <CardTitleFlex>
-                <h3>{item.programa}</h3>
+                <h3>{item.nombre_programa}</h3>
               </CardTitleFlex>
             }
             <CardTitleIcon>{item.icon}</CardTitleIcon>
@@ -28,10 +30,10 @@ const AcademicosList = ({ academicosData }) => {
               {item.academicos.map((item2, index) => {
                 return (
                   <CardListItem item2={item2} key={index}>
-                    {<CardItemImage>{item2.icon}</CardItemImage>}
+                    <CardItemImage><FaIcons.FaUsers /></CardItemImage>
                     <CardItemText>
                       <h4>{item2.nombre}</h4>
-                      <CardItemSubtext>{item2.perfil}</CardItemSubtext>
+                      <CardItemSubtext>{item2.categoria}</CardItemSubtext>
                     </CardItemText>
                   </CardListItem>
                 );

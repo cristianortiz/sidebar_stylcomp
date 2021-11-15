@@ -5,21 +5,22 @@ import { academicosData } from "../../components/Cards/cardsData";
 import AcademicosContext from "../../context/Academicos/AcademicosContext";
 
 const Academicos = () => {
-  const academicos_context =useContext(AcademicosContext)
-  const{academicos,getAcademicos} =academicos_context
+  const claustroContext  = useContext(AcademicosContext)
+  const {claustrosProgramas,getClaustrosProgramas} = claustroContext
+  
   //get academicos when Academicos comp is loaded trough a useEffect
   useEffect(() => {
     // if (message) {
     //   showAlert(message.msg, message.category);
     // }
-    getAcademicos();
+    getClaustrosProgramas();
     //eslint-disable-next-line
   }, []);
   //console.log(academicos)
   return (
     <>
       <CardsBox keep_size={true}>
-        <AcademicosList academicosData={academicosData}></AcademicosList>
+        <AcademicosList claustrosProgramas={claustrosProgramas}></AcademicosList>
       </CardsBox>
       ;
     </>
