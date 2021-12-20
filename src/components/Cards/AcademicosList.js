@@ -1,5 +1,7 @@
 import React from "react";
 import * as FaIcons from "react-icons/fa";
+import * as GoIcons from "react-icons/go";
+import IconComponent from "../../config/IconComponent";
 import {
   CardContainer,
   CardBody,
@@ -25,7 +27,7 @@ const AcademicosList = ({claustrosProgramas}) => {
                 <h3>{item.nombre_programa}</h3>
               </CardTitleFlex>
             }
-            <CardTitleIcon>{item.icon}</CardTitleIcon>
+            <CardTitleIcon><IconComponent name={item.icon} /></CardTitleIcon>
             <CardBody margin={true}>
               {item.academicos.map((item2, index) => {
                 return (

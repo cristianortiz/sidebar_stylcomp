@@ -13,10 +13,10 @@ const AcademicosState = (props) => {
  const [state,dispatch]=useReducer(AcademicosReducer,initialState)
 
  //CRUD ACTIONS through dipatch
+ //request faculty members from API
  const getClaustrosProgramas = async()=>{
      const response = await axiosClient.get('investigadores/claustros')
-     
-     console.log(response)
+    // console.log(response)
      dispatch({
         //type to handle show_form state prop
         type: GET_CLAUSTROS,
