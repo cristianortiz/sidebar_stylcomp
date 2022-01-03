@@ -1,9 +1,19 @@
 import React from 'react'
+import { LoginBoxContainer, LoginButton, LoginForm, LoginInput, LoginMain, LoginTitle } from './login.styles'
 
 const Login = () => {
     return (
-       <h1>Login component</h1>
-    )
+        <LoginMain>
+            <LoginBoxContainer>
+            <LoginTitle>Ingreso Dashboard Postgrado</LoginTitle>
+            <LoginForm>
+                <LoginInput type="email" placeholder="Email" name="email"></LoginInput>
+                <LoginInput type="passeord"  placeholder="Password" name="password"></LoginInput>
+                <LoginButton  type="submit">Login</LoginButton>
+            </LoginForm>
+            </LoginBoxContainer>
+        </LoginMain>
+     )
 }
 
 export default Login
