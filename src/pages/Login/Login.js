@@ -8,7 +8,7 @@ const Login = () => {
             <LoginTitle>Ingreso Dashboard Postgrado</LoginTitle>
             <LoginForm>
                 <LoginInput type="email" placeholder="Email" name="email"></LoginInput>
-                <LoginInput type="passeord"  placeholder="Password" name="password"></LoginInput>
+                <LoginInput type="password"  placeholder="Password" name="password"></LoginInput>
                 <LoginButton  type="submit">Login</LoginButton>
             </LoginForm>
             </LoginBoxContainer>

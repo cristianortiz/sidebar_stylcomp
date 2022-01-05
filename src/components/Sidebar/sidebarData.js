@@ -1,7 +1,7 @@
 import React from "react";
 import * as FaIcons from "react-icons/fa";
 import * as RiIcons from "react-icons/ri";
-//import * as IoIcons from "react-icons/io";
+import * as BiIcons from "react-icons/bi";
 export const header = {
   title: "VRIP - Postgrado",
   icon: <FaIcons.FaUniversity />,
@@ -84,5 +84,13 @@ export const sidebarData = [
         to: "/configuracion/usuarios",
       },
     ],
+  },
+  {
+    title: "Logout",
+    to: "/home/logout",
+    icon: <BiIcons.BiLogOutCircle />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+    subNav: [],
   },
 ];

@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {Route, Routes } from "react-router-dom";
 import { Container, MainContent } from "./home.styles";
 import NavBar from "../components/NavBar/NavBar";
 import Sidebar from "../components/Sidebar/Sidebar";
@@ -17,7 +17,7 @@ const Home = () => {
     useContext(SidebarContext);
 
   return (
-    <Router>
+  
       <Container>
         <Sidebar />
         <MainContent
@@ -27,18 +27,18 @@ const Home = () => {
           hide_sidebar={hide_sidebar}
         >
           <NavBar />
-          <Switch>
-            <Route exact path="/home" component={Dashboard} />
-            <Route exact path="/home/dashboard" component={Dashboard} />
-            <Route exact path="/home/programas" component={Programas} />
-            <Route exact path="/home/alumnos" component={Alumnos} />
-            <Route exact path="/home/becas" component={Becas} />
-            <Route exact path="/home/academicos" component={Academicos} />
-            <Route exact path="/home/configuracion" component={Configuracion} />
-          </Switch>
+          <Routes>
+            <Route  path="/" element={<Dashboard />} />
+            <Route  path="/dashboard" element={<Dashboard />} />
+            <Route  path="/programas" element={<Programas />} />
+            <Route  path="/alumnos" element={<Alumnos />} />
+            <Route  path="/becas" element={<Becas />} />
+            <Route  path="/academicos" element={<Academicos />} />
+            <Route  path="/configuracion" element={<Configuracion />} />
+          </Routes>
         </MainContent>
       </Container>
-    </Router>
+    
   );
 };
 

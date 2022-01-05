@@ -17,9 +17,9 @@ width: 100vw;
 export const LoginBoxContainer =styled.div`
 background-color: #fff;
 box-shadow: 0px 3px #363636;
-border-radius: 2px;
+border-radius: 8px;
 padding: 20px;
-width: 250px;
+width: 300px;
 `;
 export const LoginTitle = styled.h3`
 color: darken($color: #5c62c5, $amount: 20);
@@ -48,21 +48,23 @@ export const LoginButton = styled.button`
   border: none;
   color: #fff;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   padding: 7px 10px 7px 10px;
   background-color: #5c62c5;
   border-radius: 3px;
+  margin-top:5px;
 
-  transition:  background-color 0.3s ease;
-  &:focus {
-    outline: none;
-  }
+  // transition: background-color 0.3s ease;
+  // &:focus {
+  //   outline: none;
+  // }
   &:hover {
-   background-color: darken($color: #5c62c5, $amount: 50);
+   //background-color: darken($color: #5c62c5, $amount: 15);
+   background-color:#3e44ad;
   }
 
-  &:disabled {
-    background-color: lighten($color: #5c62c5, $amount: 1);
-  }
+  // &:disabled {
+  //   background-color: lighten($color: #5c62c5, $amount: 1);
+  // }
 
 `;
